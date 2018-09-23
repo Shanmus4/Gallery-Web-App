@@ -3,7 +3,7 @@
 *{
     margin: 0%;
     font-family: Raleway;
-    font-weight: bold;
+    font-weight: bold;  
 }
 
 body{
@@ -16,9 +16,9 @@ body{
 
 .gallery{
     float: left;
-    
     width: 50px;
     margin: 0%;
+    font-size: 20vw;
 }
 
 .card{
@@ -121,3 +121,60 @@ a:hover{
     border-radius: 50%;
   }
  
+
+  .add {
+    background-color :#356adc;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 100%;
+    height: 2em;
+    width: 2em;
+    font-size: 30px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    
+  }
+  
+  #bottom-button {
+    
+    position: fixed;
+    bottom: 40px;
+    right: 50px;
+    height: auto;
+    width: auto;
+    
+  }
+
+  .add:hover{
+    background-color : rgb(33, 76, 192);
+  }
+
+  .add:focus{
+    outline: none !important;
+    box-shadow: 0 0 0 0.2rem rgba(53, 131, 220, 0.5);
+
+  }
+
+
+  .del {
+    background-color :#dc3535;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 100%;
+    height: 2em;
+    width: 2em;
+    font-size: 30px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    
+  }
+  .del:hover{
+      background-color : rgb(192, 33, 33);
+    }
+  .del:focus{
+  outline: none !important;
+      box-shadow: 0 0 0 0.2rem rgba(220, 53, 53, 0.5);
+
+    }
