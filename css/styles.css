@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: #e5e5e5; 
+    background-color: #ececec; 
 }
 
 /* .navbar{
@@ -21,7 +21,7 @@ body{
     font-size: 20vw;
 }
 
-.card{
+.cards{
     
     margin-top: 15px;
     border: none;  
@@ -36,7 +36,7 @@ body{
    
 }
 
-.card:hover{
+.cards:hover{
     z-index: 2;
     -webkit-transition: all 200ms ease-in;
     -webkit-transform: scale(1.5);
@@ -68,7 +68,7 @@ a:hover{
     display: inline-block;
     width: 60px;
     height: 34px;
-    top: 17px;
+    top: 9px;
   }
   
   /* Hide default HTML checkbox */
@@ -121,73 +121,7 @@ a:hover{
   .slider.round:before {
     border-radius: 50%;
   }
- 
-
-  .add {
-    background-color :#356adc;
-    color: white;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    border-radius: 100%;
-    height: 2em;
-    width: 2em;
-    font-size: 30px;
-    box-shadow: 0px 4px 10px grey;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    
+   
+  .bottom-card{
+    background-color: #b7b7b7;
   }
-  
-  #bottom-button {
-    
-    position: fixed;
-    bottom: 40px;
-    right: 50px;
-    height: auto;
-    width: auto;
-    z-index: 3;
-    
-    
-  }
-
-  .add:hover{
-    background-color : rgb(33, 76, 192);
-    box-shadow: 0px 4px 10px grey;
-  }
-
-  .add:focus{
-    outline: none !important;
-    box-shadow: 0 0 0 0.2rem rgba(53, 131, 220, 0.5), 0px 4px 10px grey;;
-    
-
-  }
-
-
-  .del {
-    background-color :#dc3535;
-    color: white;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    border-radius: 100%;
-    height: 2em;
-    width: 2em;
-    font-size: 30px;
-    box-shadow: 0px 4px 10px grey;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    
-  }
-
-  .del:hover{
-      background-color : rgb(192, 33, 33);
-    }
-
-  .del:focus{
-  outline: none !important;
-      box-shadow: 0 0 0 0.2rem rgba(220, 53, 53, 0.5),0px 4px 10px grey;
-
-    }
-
-    .color-switch {
-      font-size: 150%;
-    }
