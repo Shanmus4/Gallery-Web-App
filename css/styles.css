@@ -68,6 +68,7 @@ a:hover{
     display: inline-block;
     width: 60px;
     height: 34px;
+    top: 17px;
   }
   
   /* Hide default HTML checkbox */
@@ -132,6 +133,7 @@ a:hover{
     height: 2em;
     width: 2em;
     font-size: 30px;
+    box-shadow: 0px 4px 10px grey;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     
   }
@@ -143,16 +145,20 @@ a:hover{
     right: 50px;
     height: auto;
     width: auto;
+    z-index: 3;
+    
     
   }
 
   .add:hover{
     background-color : rgb(33, 76, 192);
+    box-shadow: 0px 4px 10px grey;
   }
 
   .add:focus{
     outline: none !important;
-    box-shadow: 0 0 0 0.2rem rgba(53, 131, 220, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(53, 131, 220, 0.5), 0px 4px 10px grey;;
+    
 
   }
 
@@ -167,14 +173,21 @@ a:hover{
     height: 2em;
     width: 2em;
     font-size: 30px;
+    box-shadow: 0px 4px 10px grey;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     
   }
+
   .del:hover{
       background-color : rgb(192, 33, 33);
     }
+
   .del:focus{
   outline: none !important;
-      box-shadow: 0 0 0 0.2rem rgba(220, 53, 53, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba(220, 53, 53, 0.5),0px 4px 10px grey;
 
+    }
+
+    .color-switch {
+      font-size: 150%;
     }

@@ -9,25 +9,26 @@
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="shortcut icon" href="./assets/gallery.png" />
-    <script src="./js/script.js"></script>
     
 
 </head>
 <body>
-    <nav class="mainnavcc navbar navbar-expand-lg navbar-light shadow-sm fixed-top">
+    <nav class="mainnavcc navbar navbar-expand-lg navbar-light shadow-sm fixed-top" style="background-color: #b7b7b7">
         <a class="navbar-brand" href="#">
             <ul class="navbar-nav">
-            <li><img class="gallery pl-1" src="./assets/gallery (1).svg" alt="Gallery Icon"></li>
-            <li><h3 class="font pt-2 pl-2 font-weight-light">Gallery</h3></li>
+            <li>
+                <img class="gallery pl-1" src="./assets/gallery (1).svg" alt="Gallery Icon">
+                <h3 class="font pt-2 pl-2 font-weight-light">Gallery</h3>
+            </li>
             </ul>
         </a>
        
-        <ul class="navbar-nav ml-auto pt-3 pl-2" >
-                <li class="font pr-2"><h3><strong>Color Switch  </strong></h3></li>
-                <li>    
+        <ul class="navbar-nav ml-auto" >
+                <li class="font pr-2">
+                    <label class="color-switch">Color Switch</label> 
                     <label class="switch">
                     <input type="checkbox">
-                    <span onclick="colorFunction()" class="slider round"></span>
+                    <span onclick="colorFunction()" class="slider round pt-2"></span>
                     </label>
                 </li>
         </ul>
@@ -46,12 +47,37 @@
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text" >This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        
+                        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                                <button type="button" class="btn btn-secondary">1</button>
+                                <button type="button" class="btn btn-secondary">2</button>
+                              
+                                <div class="btn-group" role="group">
+                                  <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Dropdown
+                                  </button>
+                                  <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                    <a class="dropdown-item" href="#">Dropdown link</a>
+                                    <a class="dropdown-item" href="#">Dropdown link</a>
+                                  </div>
+                                </div>
+                              </div>
                     </div>
                 </div>
                 </a>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 m-20">
+                <a href="#">
+                <div class="card p-1 shadow">
+                    <img class="card-img-top" src="assets/11.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
                 <a href="#">
                 <div class="card p-1 shadow">
                     <img class="card-img-top" src="assets/11.jpg" alt="Card image cap">
@@ -97,8 +123,8 @@
     
     
     </div>
-    <script src="./js/bootstrap.js"></script>
-    <script src="./js/popper.js"></script>
     <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
